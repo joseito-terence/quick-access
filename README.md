@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="public/logo192.png" alt="Logo" width="80" height="80">
+    <img src="images/logo192.png" alt="Logo" width="80" height="80">
 
   <h2 align="center">Quick Access</h2>
 
