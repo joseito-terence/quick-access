@@ -1,0 +1,107 @@
+.shortcuts {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  max-width: 724px;
+  backdrop-filter: blur(1px);
+  padding-left: 0px;
+  padding: 25px;
+  margin: 0px;
+  margin-bottom: 60px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  /* height: 62vh; */
+  overflow-y: scroll;
+}
+
+.shortcuts::-webkit-scrollbar {
+  display: none;
+}
+
+/* .break {
+  flex-basis: 100%;
+  height: 0;
+} */
+
+.addShortcutBtn > div > button > span > .MuiSvgIcon-root {
+  color: black;
+  width: 100%;
+  height: 100%;
+}
+
+/******************************************/
+
+.shortcut {
+  height: 42px;
+  width: 42px;
+  margin: 10px;
+  background-color: white;
+  transition: transform 450ms;
+  overflow: hidden;
+}
+
+.shortcut:hover {
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+  transform: scale(1.08);
+}
+
+.shortcut > a > img {
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+  text-indent: 10000px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: 10px;
+}
+/********************************************************/
+
+.shortcut__wrapper {
+  position: relative;
+}
+
+.shortcut__more {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+
+  background-color: #424242;
+  text-align: center;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  z-index: 1;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.shortcut__wrapper:hover > .shortcut__more {
+  visibility: visible;
+}
+
+/* ~~~~~~~ ShortcutMenu ~~~~~~~ */
+.MuiListItemIcon-root {
+  min-width: 35px !important;
+}
+.MuiList-padding {
+  padding: 0px !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .shortcut {
+    height: 64px;
+    width: 64px;
+  }
+}
